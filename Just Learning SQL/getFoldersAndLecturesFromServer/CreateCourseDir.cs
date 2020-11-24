@@ -19,7 +19,7 @@ namespace Just_Learning_SQL.getFoldersAndLecturesFromServer
             DirectoryInfo dirInfo;
             Directory.Delete(Settings.Default.pathForCoursesFromServer, true);
             
-
+            //лалала еще один коммент по приколуы
             foreach (var course in CoursesListInfo.courses)
             {
                 course.CourseName.Replace("/", ",").Replace("|", ",").Replace(":", ",").Replace("*", ",").Replace("?", ",").Replace("<", ",").Replace(">", ","); // понять как запихнуть сюда блядский \
@@ -28,7 +28,6 @@ namespace Just_Learning_SQL.getFoldersAndLecturesFromServer
 
                 //очистка лекций и курсов перед заполнением
                 var modules = CoursesListInfo.modules.Where(c => c.Course == course.CourseName).ToList();
-                //просто добавлю коммент для понятия работы гитхаба
                 foreach (var module in modules)
                 {
                     dirInfo.CreateSubdirectory(module.ModuleName);
