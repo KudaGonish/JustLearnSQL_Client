@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Just_Learning_SQL.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="LastUpdateData" Type="System.String" Scope="User">
+      <Value Profile="(Default)">00.00.0000</Value>
+    </Setting>
+    <Setting Name="serverIp" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://localhost:44381/</Value>
+    </Setting>
+    <Setting Name="path" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Resources/DemoExam/</Value>
+    </Setting>
+    <Setting Name="pathForCoursesFromServer" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Resources/Courses/</Value>
+    </Setting>
+    <Setting Name="isFrstRun" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

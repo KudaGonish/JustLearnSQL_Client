@@ -1,0 +1,95 @@
+C:\Users\dkoto\source\repos\JustLearningSQL\Just Learning SQL\obj\Debug\Just Learning SQL.csprojAssemblyReference.cache
+C:\Users\dkoto\source\repos\JustLearningSQL\Just Learning SQL\obj\Debug\Just_Learning_SQL.Desktop.resources
+C:\Users\dkoto\source\repos\JustLearningSQL\Just Learning SQL\obj\Debug\Just_Learning_SQL.Properties.Resources.resources
+C:\Users\dkoto\source\repos\JustLearningSQL\Just Learning SQL\obj\Debug\Just Learning SQL.csproj.GenerateResource.cache
+C:\Users\dkoto\source\repos\JustLearningSQL\Just Learning SQL\obj\Debug\Just Learning SQL.csproj.CoreCompileInputs.cache
+C:\Users\dkoto\source\repos\JustLearningSQL\Just Learning SQL\bin\Debug\Just Learning SQL.exe.config
+C:\Users\dkoto\source\repos\JustLearningSQL\Just Learning SQL\bin\Debug\Just Learning SQL.exe
+C:\Users\dkoto\source\repos\JustLearningSQL\Just Learning SQL\bin\Debug\Just Learning SQL.pdb
+C:\Users\dkoto\source\repos\JustLearningSQL\Just Learning SQL\bin\Debug\Guna.UI.dll
+C:\Users\dkoto\source\repos\JustLearningSQL\Just Learning SQL\bin\Debug\Guna.UI2.dll
+C:\Users\dkoto\source\repos\JustLearningSQL\Just Learning SQL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\dkoto\source\repos\JustLearningSQL\Just Learning SQL\bin\Debug\XanderUI.dll
+C:\Users\dkoto\source\repos\JustLearningSQL\Just Learning SQL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\dkoto\source\repos\JustLearningSQL\Just Learning SQL\obj\Debug\Just Learning SQL.csproj.CopyComplete
+C:\Users\dkoto\source\repos\JustLearningSQL\Just Learning SQL\obj\Debug\Just Learning SQL.exe
+C:\Users\dkoto\source\repos\JustLearningSQL\Just Learning SQL\obj\Debug\Just Learning SQL.pdb
+C:\Users\RedPepper\Desktop\JustLearningSQL\Just Learning SQL\bin\Debug\Just Learning SQL.exe.config
+C:\Users\RedPepper\Desktop\JustLearningSQL\Just Learning SQL\bin\Debug\Just Learning SQL.exe
+C:\Users\RedPepper\Desktop\JustLearningSQL\Just Learning SQL\bin\Debug\Just Learning SQL.pdb
+C:\Users\RedPepper\Desktop\JustLearningSQL\Just Learning SQL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\RedPepper\Desktop\JustLearningSQL\Just Learning SQL\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\RedPepper\Desktop\JustLearningSQL\Just Learning SQL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\RedPepper\Desktop\JustLearningSQL\Just Learning SQL\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\RedPepper\Desktop\JustLearningSQL\Just Learning SQL\bin\Debug\Interop.AcroPDFLib.dll
+C:\Users\RedPepper\Desktop\JustLearningSQL\Just Learning SQL\bin\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\RedPepper\Desktop\JustLearningSQL\Just Learning SQL\obj\Debug\Interop.AcroPDFLib.dll
+C:\Users\RedPepper\Desktop\JustLearningSQL\Just Learning SQL\obj\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\RedPepper\Desktop\JustLearningSQL\Just Learning SQL\obj\Debug\Just Learning SQL.csproj.ResolveComReference.cache
+C:\Users\RedPepper\Desktop\JustLearningSQL\Just Learning SQL\obj\Debug\Just_Learning_SQL.Desktop.resources
+C:\Users\RedPepper\Desktop\JustLearningSQL\Just Learning SQL\obj\Debug\Just_Learning_SQL.SettingsForm.resources
+C:\Users\RedPepper\Desktop\JustLearningSQL\Just Learning SQL\obj\Debug\Just_Learning_SQL.InteractiveTopic.resources
+C:\Users\RedPepper\Desktop\JustLearningSQL\Just Learning SQL\obj\Debug\Just_Learning_SQL.Properties.Resources.resources
+C:\Users\RedPepper\Desktop\JustLearningSQL\Just Learning SQL\obj\Debug\Just_Learning_SQL.Splash.resources
+C:\Users\RedPepper\Desktop\JustLearningSQL\Just Learning SQL\obj\Debug\Just_Learning_SQL.UserComponents.BaseForCards.resources
+C:\Users\RedPepper\Desktop\JustLearningSQL\Just Learning SQL\obj\Debug\Just_Learning_SQL.UserComponents.LectionTopic.resources
+C:\Users\RedPepper\Desktop\JustLearningSQL\Just Learning SQL\obj\Debug\Just_Learning_SQL.UserComponents.TopicCard.resources
+C:\Users\RedPepper\Desktop\JustLearningSQL\Just Learning SQL\obj\Debug\Just_Learning_SQL.UserComponents.WelcomeScreen.resources
+C:\Users\RedPepper\Desktop\JustLearningSQL\Just Learning SQL\obj\Debug\Just Learning SQL.csproj.GenerateResource.cache
+C:\Users\RedPepper\Desktop\JustLearningSQL\Just Learning SQL\obj\Debug\Just Learning SQL.csproj.CoreCompileInputs.cache
+C:\Users\RedPepper\Desktop\JustLearningSQL\Just Learning SQL\obj\Debug\Just Learning SQL.csproj.CopyComplete
+C:\Users\RedPepper\Desktop\JustLearningSQL\Just Learning SQL\obj\Debug\Just Learning SQL.exe
+C:\Users\RedPepper\Desktop\JustLearningSQL\Just Learning SQL\obj\Debug\Just Learning SQL.pdb
+C:\Users\RedPepper\Desktop\JustLearningSQL\Just Learning SQL\obj\Debug\Just Learning SQL.csprojAssemblyReference.cache
+C:\Users\RedPepper\Desktop\JustLearningSQL_old\Just Learning SQL\bin\Debug\Just Learning SQL.exe.config
+C:\Users\RedPepper\Desktop\JustLearningSQL_old\Just Learning SQL\bin\Debug\Just Learning SQL.exe
+C:\Users\RedPepper\Desktop\JustLearningSQL_old\Just Learning SQL\bin\Debug\Just Learning SQL.pdb
+C:\Users\RedPepper\Desktop\JustLearningSQL_old\Just Learning SQL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\RedPepper\Desktop\JustLearningSQL_old\Just Learning SQL\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\RedPepper\Desktop\JustLearningSQL_old\Just Learning SQL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\RedPepper\Desktop\JustLearningSQL_old\Just Learning SQL\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\RedPepper\Desktop\JustLearningSQL_old\Just Learning SQL\bin\Debug\Interop.AcroPDFLib.dll
+C:\Users\RedPepper\Desktop\JustLearningSQL_old\Just Learning SQL\bin\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\RedPepper\Desktop\JustLearningSQL_old\Just Learning SQL\obj\Debug\Just Learning SQL.csprojAssemblyReference.cache
+C:\Users\RedPepper\Desktop\JustLearningSQL_old\Just Learning SQL\obj\Debug\Interop.AcroPDFLib.dll
+C:\Users\RedPepper\Desktop\JustLearningSQL_old\Just Learning SQL\obj\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\RedPepper\Desktop\JustLearningSQL_old\Just Learning SQL\obj\Debug\Just Learning SQL.csproj.ResolveComReference.cache
+C:\Users\RedPepper\Desktop\JustLearningSQL_old\Just Learning SQL\obj\Debug\Just_Learning_SQL.Desktop.resources
+C:\Users\RedPepper\Desktop\JustLearningSQL_old\Just Learning SQL\obj\Debug\Just_Learning_SQL.InteractiveTopic.resources
+C:\Users\RedPepper\Desktop\JustLearningSQL_old\Just Learning SQL\obj\Debug\Just_Learning_SQL.Properties.Resources.resources
+C:\Users\RedPepper\Desktop\JustLearningSQL_old\Just Learning SQL\obj\Debug\Just_Learning_SQL.Splash.resources
+C:\Users\RedPepper\Desktop\JustLearningSQL_old\Just Learning SQL\obj\Debug\Just_Learning_SQL.UserComponents.BaseForCards.resources
+C:\Users\RedPepper\Desktop\JustLearningSQL_old\Just Learning SQL\obj\Debug\Just_Learning_SQL.UserComponents.LectionTopic.resources
+C:\Users\RedPepper\Desktop\JustLearningSQL_old\Just Learning SQL\obj\Debug\Just_Learning_SQL.UserComponents.TopicCard.resources
+C:\Users\RedPepper\Desktop\JustLearningSQL_old\Just Learning SQL\obj\Debug\Just_Learning_SQL.UserComponents.WelcomeScreen.resources
+C:\Users\RedPepper\Desktop\JustLearningSQL_old\Just Learning SQL\obj\Debug\Just Learning SQL.csproj.GenerateResource.cache
+C:\Users\RedPepper\Desktop\JustLearningSQL_old\Just Learning SQL\obj\Debug\Just Learning SQL.csproj.CoreCompileInputs.cache
+C:\Users\RedPepper\Desktop\JustLearningSQL_old\Just Learning SQL\obj\Debug\Just Learning SQL.csproj.CopyComplete
+C:\Users\RedPepper\Desktop\JustLearningSQL_old\Just Learning SQL\obj\Debug\Just Learning SQL.exe
+C:\Users\RedPepper\Desktop\JustLearningSQL_old\Just Learning SQL\obj\Debug\Just Learning SQL.pdb
+C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\bin\Debug\Just Learning SQL.exe.config
+C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\bin\Debug\Just Learning SQL.exe
+C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\bin\Debug\Just Learning SQL.pdb
+C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\bin\Debug\Interop.AcroPDFLib.dll
+C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\bin\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\obj\Debug\Just Learning SQL.csprojAssemblyReference.cache
+C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\obj\Debug\Interop.AcroPDFLib.dll
+C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\obj\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\obj\Debug\Just Learning SQL.csproj.ResolveComReference.cache
+C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\obj\Debug\Just_Learning_SQL.Desktop.resources
+C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\obj\Debug\Just_Learning_SQL.InteractiveTopic.resources
+C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\obj\Debug\Just_Learning_SQL.Properties.Resources.resources
+C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\obj\Debug\Just_Learning_SQL.Splash.resources
+C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\obj\Debug\Just_Learning_SQL.UserComponents.BaseForCards.resources
+C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\obj\Debug\Just_Learning_SQL.UserComponents.LectionTopic.resources
+C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\obj\Debug\Just_Learning_SQL.UserComponents.TopicCard.resources
+C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\obj\Debug\Just_Learning_SQL.UserComponents.WelcomeScreen.resources
+C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\obj\Debug\Just Learning SQL.csproj.GenerateResource.cache
+C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\obj\Debug\Just Learning SQL.csproj.CoreCompileInputs.cache
+C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\obj\Debug\Just Learning SQL.csproj.CopyComplete
+C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\obj\Debug\Just Learning SQL.exe
+C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\obj\Debug\Just Learning SQL.pdb
