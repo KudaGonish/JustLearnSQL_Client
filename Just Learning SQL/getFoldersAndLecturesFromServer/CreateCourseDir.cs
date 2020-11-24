@@ -28,7 +28,7 @@ namespace Just_Learning_SQL.getFoldersAndLecturesFromServer
 
                 //очистка лекций и курсов перед заполнением
                 var modules = CoursesListInfo.modules.Where(c => c.Course == course.CourseName).ToList();
-
+                //просто добавлю коммент для понятия работы гитхаба
                 foreach (var module in modules)
                 {
                     dirInfo.CreateSubdirectory(module.ModuleName);
