@@ -57,7 +57,7 @@ namespace Just_Learning_SQL.UserComponents
                         SNM = fioTextBox.Text,
                         PKNumber = pkName,
                         AnswerType = "Image",
-                        Image = File.ReadAllBytes(openFileDialog1.FileName)
+                        Image =  File.ReadAllBytes(openFileDialog1.FileName)
 
                     }); 
                 }
@@ -71,7 +71,7 @@ namespace Just_Learning_SQL.UserComponents
                         PKNumber = pkName,
                         AnswerType = "File",
                         FileName = Path.GetFileNameWithoutExtension(openFileDialog1.FileName),
-                        File = QueryForServer.FileToByteArray(openFileDialog1.FileName)
+                        File = await QueryForServer.FileToByteArray(openFileDialog1.FileName)
 
                     }); 
                 }

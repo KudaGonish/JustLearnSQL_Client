@@ -13,13 +13,11 @@ namespace Just_Learning_SQL.getFoldersAndLecturesFromServer
     {
         public async Task CreateCoursesDir()
         {
-            QueryForServer queryForServer = new QueryForServer();
-            await queryForServer.RunAsync();
+            await QueryForServer.RunAsync();
             // обрабатываем результаты запроса на сервер, создаем папки,подпапки и лекции
             DirectoryInfo dirInfo;
             Directory.Delete(Settings.Default.pathForCoursesFromServer, true);
             
-            //лалала еще один коммент по приколуы
             foreach (var course in CoursesListInfo.courses)
             {
                 course.CourseName.Replace("/", ",").Replace("|", ",").Replace(":", ",").Replace("*", ",").Replace("?", ",").Replace("<", ",").Replace(">", ","); // понять как запихнуть сюда блядский \
