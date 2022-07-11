@@ -1,6 +1,10 @@
 ﻿using Just_Learning_SQL.getFoldersAndLecturesFromServer;
+using Just_Learning_SQL.Models;
 using Just_Learning_SQL.Properties;
 using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Net;
 using System.Net.NetworkInformation;
 using System.Threading;
 using System.Windows.Forms;
@@ -32,18 +36,23 @@ namespace Just_Learning_SQL
                     CreateCourseDir createCourseDir = new CreateCourseDir();
                     await createCourseDir.CreateCoursesDir();
 
-                    Settings.Default.isFrstRun = false; // не забыть поменять эту хуйню на фалс
+                    Settings.Default.isFrstRun = false; 
                     Settings.Default.Save();
                 }
+                Thread openDesktop = new Thread(delegate ()
+                {
+                    Application.Run(new Desktop());
+                });
+                Close();
+                openDesktop.SetApartmentState(ApartmentState.STA);
+                openDesktop.Start();
+            }
+            else
+            {
+                MessageBox.Show("В данный момент сервер не доступен");
             }
 
-            Thread openDesktop = new Thread(delegate ()
-            {
-                Application.Run(new Desktop());
-            });
-            Close();
-            openDesktop.SetApartmentState(ApartmentState.STA);
-            openDesktop.Start();
+            
         }
 
         private bool pingMainComputer()
@@ -54,7 +63,7 @@ namespace Just_Learning_SQL
             try
             {
                 pingMainPC = new Ping();
-                pingReply = pingMainPC.Send("learneasyapi-001-site1.ftempurl.com");
+                pingReply = pingMainPC.Send("learneasyapi100-001-site1.ftempurl.com");
             }
             catch
             {

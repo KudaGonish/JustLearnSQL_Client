@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LectionTopic));
             this.sendFileButton = new Guna.UI2.WinForms.Guna2Button();
             this.fioTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.nameFileLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -40,7 +40,9 @@
             this.layoutForRichBox = new System.Windows.Forms.Panel();
             this.queryBox = new System.Windows.Forms.RichTextBox();
             this.openFileButton = new Guna.UI2.WinForms.Guna2Button();
+            this.axAcroPDF1 = new AxAcroPDFLib.AxAcroPDF();
             this.layoutForRichBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF1)).BeginInit();
             this.SuspendLayout();
             // 
             // sendFileButton
@@ -112,15 +114,6 @@
             this.gunaLabel1.TabIndex = 10;
             this.gunaLabel1.Text = "*Если вас несколько за пк, введите ФИ по образцу:\r\nИванов Иван;Степанов Сергей\r\n\r" +
     "\n";
-            // 
-            // webBrowser1
-            // 
-            this.webBrowser1.Location = new System.Drawing.Point(0, 0);
-            this.webBrowser1.Margin = new System.Windows.Forms.Padding(0);
-            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
-            this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(588, 640);
-            this.webBrowser1.TabIndex = 11;
             // 
             // openFileDialog1
             // 
@@ -205,17 +198,27 @@
             this.openFileButton.Text = "Выбрать файл";
             this.openFileButton.Click += new System.EventHandler(this.openFileButton_Click);
             // 
+            // axAcroPDF1
+            // 
+            this.axAcroPDF1.Enabled = true;
+            this.axAcroPDF1.Location = new System.Drawing.Point(0, 0);
+            this.axAcroPDF1.Margin = new System.Windows.Forms.Padding(0);
+            this.axAcroPDF1.Name = "axAcroPDF1";
+            this.axAcroPDF1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF1.OcxState")));
+            this.axAcroPDF1.Size = new System.Drawing.Size(588, 640);
+            this.axAcroPDF1.TabIndex = 20;
+            // 
             // LectionTopic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.axAcroPDF1);
             this.Controls.Add(this.openFileButton);
             this.Controls.Add(this.layoutForRichBox);
             this.Controls.Add(this.gunaLabel2);
             this.Controls.Add(this.guna2HtmlLabel2);
             this.Controls.Add(this.nameFileLabel);
-            this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.fioTextBox);
@@ -225,7 +228,9 @@
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "LectionTopic";
             this.Size = new System.Drawing.Size(1000, 640);
+            this.Load += new System.EventHandler(this.LectionTopic_Load);
             this.layoutForRichBox.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -237,7 +242,6 @@
         private Guna.UI2.WinForms.Guna2TextBox fioTextBox;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
-        private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private Guna.UI2.WinForms.Guna2HtmlLabel nameFileLabel;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
@@ -245,5 +249,6 @@
         private System.Windows.Forms.Panel layoutForRichBox;
         private System.Windows.Forms.RichTextBox queryBox;
         private Guna.UI2.WinForms.Guna2Button openFileButton;
+        private AxAcroPDFLib.AxAcroPDF axAcroPDF1;
     }
 }

@@ -16,8 +16,6 @@ namespace Just_Learning_SQL
             InitializeComponent();
         }
 
-        
-
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
 
@@ -115,7 +113,22 @@ namespace Just_Learning_SQL
         {
             axAcroPDF1.src = srcLecture;
             axAcroPDF1.setShowToolbar(false);
-           // webBrowser1.Navigate(srcLecture);
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            string text = "select ID,NAME,COST from Таблица1 where ID = 2";
+
+            if(text == queryBox.Text)
+            {
+                answerTextBox.Text = String.Format("2" + Environment.NewLine +
+                                                   "Xiaomi redmi note 7" + Environment.NewLine +
+                                                   "25 000");
+            }
+            else
+            {
+                answerTextBox.Text = "Запрос написан не корректно";
+            }
         }
     }
 }

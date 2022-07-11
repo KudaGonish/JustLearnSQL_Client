@@ -6,22 +6,13 @@ using System.Threading.Tasks;
 
 namespace Just_Learning_SQL.Models
 {
-    class Lesson
+    class Lecture
     {
-        public int LessonId { get; set; }
-
-        public string LessonName { get; set; }
-
-        public string LessonDescription { get; set; }
-
-        public string Course { get; set; }
-
-        public string Module { get; set; }
-
+        public int LectureId { get; set; }
+        public int ModuleId { get; set; }
+        public string Title { get; set; }
+        public string Description { get; set; }
         public string FileName { get; set; }
-
-        public string FileTimeUpload { get; set; }
-
-        public byte[] File { get; set; }
+        public byte[] LectureFile { get; set; }
     }
 }

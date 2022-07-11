@@ -1,19 +1,23 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
+using System.Linq;
 using System.Net;
 using System.Windows.Forms;
 using Just_Learning_SQL.getFoldersAndLecturesFromServer;
 using Just_Learning_SQL.Models;
-
+using Microsoft.Win32;
 
 namespace Just_Learning_SQL.UserComponents
 {
     public partial class LectionTopic : UserControl
     {
+
+        //lectureNameNotCut
         KeyWordsForInteractiveTopic keyWords = new KeyWordsForInteractiveTopic();
 
-        string pkName = Dns.GetHostName() + "/" + Environment.UserName;
+        List<LectionModelForAnswer> lectionsIdAndNameList = new List<LectionModelForAnswer>();
 
         public LectionTopic()
         {
@@ -46,52 +50,74 @@ namespace Just_Learning_SQL.UserComponents
 
         private async void sendFileButton_Click(object sender, EventArgs e)
         {
-            if (openFileDialog1.FileName != "")
+            if (fioTextBox.Text.Length > 6)
             {
-                if (Path.GetExtension(openFileDialog1.FileName) == ".png")
+                if (openFileDialog1.FileName != "")
                 {
-                    //Отправка ответа в виде картинки
-                    await QueryForServer.CreateAnswerAsync(new Answer()
-                    {
-                        LessonId = 1, //доделать
-                        SNM = fioTextBox.Text,
-                        PKNumber = pkName,
-                        AnswerType = "Image",
-                        Image =  File.ReadAllBytes(openFileDialog1.FileName)
 
-                    }); 
+                    if (Path.GetExtension(openFileDialog1.FileName) == ".png")
+                    {
+                        //Отправка ответа в виде картинки
+                        await QueryForServer.CreateAnswerAsync(new Answer()
+                        {
+                            LectureId = lectionsIdAndNameList.First(i => i.FileName == LectureInfo.fileName).LectureId,
+                            LFP = fioTextBox.Text,
+                            PCNumber = Environment.UserName,
+                            AnswerType = "Image",
+                            AnswerImage = File.ReadAllBytes(openFileDialog1.FileName)
+                        });
+                        MessageBox.Show("Ответ успешно отправлен!");
+
+
+                    }
+                    else
+                    {
+                        //Отправка ответа в виде файла
+                        await QueryForServer.CreateAnswerAsync(new Answer()
+                        {
+                            LectureId = lectionsIdAndNameList.First(i => i.FileName == LectureInfo.fileName).LectureId,
+                            LFP = fioTextBox.Text,
+                            PCNumber = Environment.UserName,
+                            AnswerType = "File",
+                            AnswerFileName = Path.GetFileNameWithoutExtension(openFileDialog1.FileName),
+                            AnswerFile = await QueryForServer.FileToByteArray(openFileDialog1.FileName)
+
+                        });
+                        MessageBox.Show("Ответ успешно отправлен!");
+                    }
+
                 }
                 else
                 {
-                    //Отправка ответа в виде файла
-                    await QueryForServer.CreateAnswerAsync(new Answer()
+                    //"Отправка ответа в виде стринг
+                    if (queryBox.Text.Length > 10)
                     {
-                        LessonId = 1,
-                        SNM = fioTextBox.Text,
-                        PKNumber = pkName,
-                        AnswerType = "File",
-                        FileName = Path.GetFileNameWithoutExtension(openFileDialog1.FileName),
-                        File = await QueryForServer.FileToByteArray(openFileDialog1.FileName)
+                        await QueryForServer.CreateAnswerAsync(new Answer()
+                        {
+                            LectureId = lectionsIdAndNameList.First(i => i.FileName == LectureInfo.fileName).LectureId,
+                            LFP = fioTextBox.Text,
+                            PCNumber = Environment.UserName,
+                            AnswerType = "Text",
+                            AnswerText = queryBox.Text
 
-                    }); 
+                        });
+                        MessageBox.Show("Ответ успешно отправлен!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Введено слишком мало символов в текстовом поле ответа");
+                    }
+
                 }
+                openFileDialog1.FileName = "";
+                nameFileLabel.Text = "Выбран файл:";
+                fioTextBox.Text = "";
             }
             else
             {
-                //"Отправка ответа в виде стринг
-                await QueryForServer.CreateAnswerAsync(new Answer()
-                {
-                    LessonId = 1, // доделать хуйню с парсингом номера лекции
-                    SNM = fioTextBox.Text,
-                    PKNumber = pkName,
-                    AnswerType = "Text",
-                    Text = queryBox.Text
-
-                });
+                MessageBox.Show("Вы не указали фамилию");
             }
-            openFileDialog1.FileName = "";
-            nameFileLabel.Text = "Выбран файл:";
-            fioTextBox.Text = "";
+           
         }
         private void startOpenFileDialog()
         {
@@ -110,18 +136,49 @@ namespace Just_Learning_SQL.UserComponents
             }
             nameFileLabel.Text = "Выбран файл:  " + Path.GetFileNameWithoutExtension(openFileDialog1.FileName) + Path.GetExtension(openFileDialog1.FileName);
 
-
-
-
-
         }
 
         protected override void OnLoad(EventArgs e)
         {
-            // MessageBox.Show(srcLecture);
-            //axAcroPDF1.src = srcLecture;
-            // axAcroPDF1.setShowToolbar(false);
-            webBrowser1.Url = new Uri(LectureInfo.srcLecture);
+
+            string path = @"appSettings\settings.txt";
+
+            var list = File.ReadAllLines(path).ToList();
+            foreach (var item in list)
+            {
+                lectionsIdAndNameList.Add(new LectionModelForAnswer
+                {
+                    LectureId = Convert.ToInt32(item.Split(' ')[1]),
+                    FileName = item.Split(' ')[0]
+                });
+            }
+
+            RegistryKey adobe = Registry.LocalMachine.OpenSubKey("Software").OpenSubKey("Adobe");
+
+            if (adobe != null)
+            {
+                RegistryKey acrobatReader = adobe.OpenSubKey("Acrobat Reader");
+
+                if (acrobatReader == null)
+                {
+                    MessageBox.Show("На вашем компьютере не установлен Adobe Acrobat Reader" + Environment.NewLine + "Для продолжения работы, установите Acrobate Reader");
+                }
+            }
+
+            string[] fromat = LectureInfo.srcLecture.Split('.');
+
+
+            try
+            {
+                axAcroPDF1.setShowToolbar(false);
+                axAcroPDF1.ContextMenuStrip = null;
+                axAcroPDF1.src = LectureInfo.srcLecture;
+            }
+            catch
+            {
+                MessageBox.Show("Вы пытались открыть не верный формат файла" + Environment.NewLine + "Сообщите преподователю");
+            }
+
             base.OnLoad(e);
         }
 
@@ -217,8 +274,13 @@ namespace Just_Learning_SQL.UserComponents
             this.Refresh();
         }
 
+
         #endregion
 
+        private void LectionTopic_Load(object sender, EventArgs e)
+        {
 
+
+        }
     }
 }

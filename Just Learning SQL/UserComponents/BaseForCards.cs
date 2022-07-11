@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using Just_Learning_SQL.DemoExam;
@@ -51,16 +46,16 @@ namespace Just_Learning_SQL.UserComponents
 
             var label = (Label)sender;
             var folder = folder_LectureModels.FirstOrDefault(n => n.nameFolder == label.Text);
-
+            
             foreach (var file in folder.nameLecures)
             {
                 itemPanel.Controls.Add(new TopicCard
                 {
                     backImage = Resources.c_,
                     lectureName = file.Name.Remove(file.Name.Length - 4, 4),
+                    notCutFileName = file.Name,
                     lectureFullName = file.FullName,
                     isDemoExam = isDemoExam
-
                 });
             }
         }

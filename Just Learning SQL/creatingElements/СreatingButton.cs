@@ -23,6 +23,7 @@ namespace Just_Learning_SQL.creatingElements
             button.Font = new Font("Century Gothic", 11F);
             button.ForeColor = Color.FromArgb(4, 148, 221);
             button.Height = 40;
+            button.Width = 120;
             button.Animated = true;
             button.FillColor = Color.White;
             button.PressedColor = Color.Black;

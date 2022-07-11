@@ -30,12 +30,12 @@
         {
             this.formHandleDesktop = new XanderUI.XUIFormHandle();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.reloadCoursesButton = new Guna.UI2.WinForms.Guna2Button();
             this.demoExButton = new Guna.UI2.WinForms.Guna2Button();
             this.panelCources = new System.Windows.Forms.Panel();
+            this.exitButton = new Guna.UI2.WinForms.Guna2Button();
             this.formHandle2 = new XanderUI.XUIFormHandle();
             this.mainPanel = new Guna.UI2.WinForms.Guna2Panel();
-            this.reloadCoursesButton = new Guna.UI2.WinForms.Guna2Button();
-            this.exitButton = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,6 +63,26 @@
             this.guna2Panel2.Size = new System.Drawing.Size(1000, 50);
             this.guna2Panel2.TabIndex = 0;
             // 
+            // reloadCoursesButton
+            // 
+            this.reloadCoursesButton.Animated = true;
+            this.reloadCoursesButton.CheckedState.Parent = this.reloadCoursesButton;
+            this.reloadCoursesButton.CustomImages.Parent = this.reloadCoursesButton;
+            this.reloadCoursesButton.FillColor = System.Drawing.Color.White;
+            this.reloadCoursesButton.Font = new System.Drawing.Font("Century Gothic", 11F);
+            this.reloadCoursesButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(148)))), ((int)(((byte)(221)))));
+            this.reloadCoursesButton.HoverState.Parent = this.reloadCoursesButton;
+            this.reloadCoursesButton.Image = global::Just_Learning_SQL.Properties.Resources.reloadCourse;
+            this.reloadCoursesButton.ImageSize = new System.Drawing.Size(24, 24);
+            this.reloadCoursesButton.Location = new System.Drawing.Point(850, 10);
+            this.reloadCoursesButton.Margin = new System.Windows.Forms.Padding(0);
+            this.reloadCoursesButton.Name = "reloadCoursesButton";
+            this.reloadCoursesButton.ShadowDecoration.Parent = this.reloadCoursesButton;
+            this.reloadCoursesButton.Size = new System.Drawing.Size(39, 40);
+            this.reloadCoursesButton.TabIndex = 7;
+            this.reloadCoursesButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.reloadCoursesButton.Click += new System.EventHandler(this.reloadCoursesButton_Click);
+            // 
             // demoExButton
             // 
             this.demoExButton.Animated = true;
@@ -89,42 +109,6 @@
             this.panelCources.Size = new System.Drawing.Size(645, 50);
             this.panelCources.TabIndex = 0;
             // 
-            // formHandle2
-            // 
-            this.formHandle2.DockAtTop = true;
-            this.formHandle2.HandleControl = this.panelCources;
-            // 
-            // mainPanel
-            // 
-            this.mainPanel.BackgroundImage = global::Just_Learning_SQL.Properties.Resources.innerShadow1;
-            this.mainPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainPanel.Location = new System.Drawing.Point(0, 50);
-            this.mainPanel.Name = "mainPanel";
-            this.mainPanel.ShadowDecoration.Parent = this.mainPanel;
-            this.mainPanel.Size = new System.Drawing.Size(1000, 650);
-            this.mainPanel.TabIndex = 1;
-            // 
-            // reloadCoursesButton
-            // 
-            this.reloadCoursesButton.Animated = true;
-            this.reloadCoursesButton.CheckedState.Parent = this.reloadCoursesButton;
-            this.reloadCoursesButton.CustomImages.Parent = this.reloadCoursesButton;
-            this.reloadCoursesButton.FillColor = System.Drawing.Color.White;
-            this.reloadCoursesButton.Font = new System.Drawing.Font("Century Gothic", 11F);
-            this.reloadCoursesButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(148)))), ((int)(((byte)(221)))));
-            this.reloadCoursesButton.HoverState.Parent = this.reloadCoursesButton;
-            this.reloadCoursesButton.Image = global::Just_Learning_SQL.Properties.Resources.reloadCourse;
-            this.reloadCoursesButton.ImageSize = new System.Drawing.Size(24, 24);
-            this.reloadCoursesButton.Location = new System.Drawing.Point(850, 10);
-            this.reloadCoursesButton.Margin = new System.Windows.Forms.Padding(0);
-            this.reloadCoursesButton.Name = "reloadCoursesButton";
-            this.reloadCoursesButton.ShadowDecoration.Parent = this.reloadCoursesButton;
-            this.reloadCoursesButton.Size = new System.Drawing.Size(39, 40);
-            this.reloadCoursesButton.TabIndex = 7;
-            this.reloadCoursesButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.reloadCoursesButton.Click += new System.EventHandler(this.reloadCoursesButton_Click);
-            // 
             // exitButton
             // 
             this.exitButton.Animated = true;
@@ -146,6 +130,22 @@
             this.exitButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
+            // formHandle2
+            // 
+            this.formHandle2.DockAtTop = true;
+            this.formHandle2.HandleControl = this.panelCources;
+            // 
+            // mainPanel
+            // 
+            this.mainPanel.BackgroundImage = global::Just_Learning_SQL.Properties.Resources.innerShadow1;
+            this.mainPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainPanel.Location = new System.Drawing.Point(0, 50);
+            this.mainPanel.Name = "mainPanel";
+            this.mainPanel.ShadowDecoration.Parent = this.mainPanel;
+            this.mainPanel.Size = new System.Drawing.Size(1000, 650);
+            this.mainPanel.TabIndex = 1;
+            // 
             // Desktop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -157,7 +157,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Desktop";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.TopMost = true;
             this.Load += new System.EventHandler(this.Desktop_Load);
             this.guna2Panel2.ResumeLayout(false);
             this.ResumeLayout(false);

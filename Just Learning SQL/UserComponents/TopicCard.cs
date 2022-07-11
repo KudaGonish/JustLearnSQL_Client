@@ -19,7 +19,7 @@ namespace Just_Learning_SQL.UserComponents
         }
         public Image backImage { get; set; }
         public string lectureName { get; set; }
-
+        public string notCutFileName { get; set; }
         public string lectureFullName { get; set; }
 
         public bool isDemoExam { get; set; }
@@ -53,6 +53,7 @@ namespace Just_Learning_SQL.UserComponents
             else
             {
                 LectureInfo.srcLecture = lectureFullName;
+                LectureInfo.fileName = notCutFileName;
                 desktop.Controls.Add(new LectionTopic());
             }
             

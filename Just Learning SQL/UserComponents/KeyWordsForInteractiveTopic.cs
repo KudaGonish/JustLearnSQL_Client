@@ -10,7 +10,7 @@ namespace Just_Learning_SQL.UserComponents
     {
 
         public string[] keyWords = {"select","from",
-                                            "insert","delete","update","count","create table"};
+                                            "insert","delete","update","count","create table","where"};
 
     }
 }

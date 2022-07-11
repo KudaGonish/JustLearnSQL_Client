@@ -27,7 +27,7 @@ namespace Just_Learning_SQL
             foreach (var folder in directoryInfo.EnumerateFileSystemInfos())
             {
                 var button = СreatingButton.CreateGuna2Button(folder.Name, i);
-                i += 177;
+                i += 120;
                 button.Click += ButtonCoursesFromServer_Click;
                 panelCources.Controls.Add(button);
             }
@@ -55,14 +55,14 @@ namespace Just_Learning_SQL
             {
                 foreach (Control ctrl in panelCources.Controls)
                 {
-                    ctrl.Location = new Point(ctrl.Location.X - 180, 10);
+                    ctrl.Location = new Point(ctrl.Location.X - 120, 10);
                 }
             }
             else
             {
                 foreach (Control ctrl in panelCources.Controls)
                 {
-                    ctrl.Location = new Point(ctrl.Location.X + 180, 10);
+                    ctrl.Location = new Point(ctrl.Location.X + 120, 10);
                 }
             }
 

@@ -76,7 +76,6 @@ C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\bin\Debug\Newt
 C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\bin\Debug\System.Net.Http.Formatting.xml
 C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\bin\Debug\Interop.AcroPDFLib.dll
 C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\bin\Debug\AxInterop.AcroPDFLib.dll
-C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\obj\Debug\Just Learning SQL.csprojAssemblyReference.cache
 C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\obj\Debug\Interop.AcroPDFLib.dll
 C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\obj\Debug\AxInterop.AcroPDFLib.dll
 C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\obj\Debug\Just Learning SQL.csproj.ResolveComReference.cache
@@ -93,3 +92,4 @@ C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\obj\Debug\Just
 C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\obj\Debug\Just Learning SQL.csproj.CopyComplete
 C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\obj\Debug\Just Learning SQL.exe
 C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\obj\Debug\Just Learning SQL.pdb
+C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\obj\Debug\Just Learning SQL.csprojAssemblyReference.cache

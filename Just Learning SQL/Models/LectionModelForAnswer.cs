@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace Just_Learning_SQL.Models
 {
-    class Module
+    class LectionModelForAnswer
     {
-        public int ModuleId { get; set; }
-        public int CourseId { get; set; }
-        public string Title { get; set; }
+        public int LectureId { get; set; }
+        public string FileName { get; set; }
     }
 }

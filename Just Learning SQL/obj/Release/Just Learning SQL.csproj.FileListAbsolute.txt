@@ -1,0 +1,14 @@
+C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\obj\Release\Just Learning SQL.csprojAssemblyReference.cache
+C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\obj\Release\Interop.AcroPDFLib.dll
+C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\obj\Release\AxInterop.AcroPDFLib.dll
+C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\obj\Release\Just Learning SQL.csproj.ResolveComReference.cache
+C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\obj\Release\Just_Learning_SQL.Desktop.resources
+C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\obj\Release\Just_Learning_SQL.InteractiveTopic.resources
+C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\obj\Release\Just_Learning_SQL.Properties.Resources.resources
+C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\obj\Release\Just_Learning_SQL.Splash.resources
+C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\obj\Release\Just_Learning_SQL.UserComponents.BaseForCards.resources
+C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\obj\Release\Just_Learning_SQL.UserComponents.LectionTopic.resources
+C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\obj\Release\Just_Learning_SQL.UserComponents.TopicCard.resources
+C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\obj\Release\Just_Learning_SQL.UserComponents.WelcomeScreen.resources
+C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\obj\Release\Just Learning SQL.csproj.GenerateResource.cache
+C:\Users\RedPepper\Desktop\JustLearningSQL_last\Just Learning SQL\obj\Release\Just Learning SQL.csproj.CoreCompileInputs.cache

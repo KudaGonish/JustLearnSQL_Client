@@ -8,20 +8,21 @@ namespace Just_Learning_SQL.Models
 {
     class Answer
     {
-        public int LessonId { get; set; }
+        public int LectureId { get; set; }
 
-        public string SNM { get; set; }
+        public string LFP { get; set; }
 
-        public string PKNumber { get; set; }
+        public string PCNumber { get; set; }
 
         public string AnswerType { get; set; }
 
-        public string Text { get; set; }
+        public string AnswerFileName { get; set; }
+        public byte[] AnswerFile { get; set; }
 
-        public byte[] Image { get; set; }
+        public string AnswerText { get; set; }
 
-        public byte[] File { get; set; }
+        public byte[] AnswerImage { get; set; }
 
-        public string FileName { get; set; }
+
     }
 }

@@ -10,8 +10,7 @@ namespace Just_Learning_SQL.Models
     {
         public int CourseId { get; set; }
         
-        public string CourseName { get; set; }
+        public string Title { get; set; }
 
-        public string CourseDescription { get; set; }
     }
 }

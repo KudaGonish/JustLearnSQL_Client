@@ -9,5 +9,6 @@ namespace Just_Learning_SQL.Models
     class LectureInfo
     {
         public static string srcLecture { get; set; }
+        public static string fileName { get; set; }
     }
 }
